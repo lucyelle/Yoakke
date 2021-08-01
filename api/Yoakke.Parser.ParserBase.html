@@ -1,0 +1,857 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ParserBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ParserBase
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Parser.ParserBase">
+  
+  
+  <h1 id="Yoakke_Parser_ParserBase" data-uid="Yoakke.Parser.ParserBase" class="text-break">Class ParserBase
+  </h1>
+  <div class="markdown level0 summary"><p>A base-class for parsers.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ParserBase</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Parser.html">Yoakke.Parser</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Parser.dll</h6>
+  <h5 id="Yoakke_Parser_ParserBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ParserBase : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase__ctor_IEnumerable_IToken__.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.%23ctor(IEnumerable%7BIToken%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L35">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase__ctor_" data-uid="Yoakke.Parser.ParserBase.#ctor*"></a>
+  <h4 id="Yoakke_Parser_ParserBase__ctor_IEnumerable_IToken__" data-uid="Yoakke.Parser.ParserBase.#ctor(IEnumerable{IToken})">ParserBase(IEnumerable&lt;IToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Parser.ParserBase.html">ParserBase</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ParserBase(IEnumerable&lt;IToken&gt; tokens)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IToken</span>&gt;</td>
+        <td><span class="parametername">tokens</span></td>
+        <td><p>The tokens to lex.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase__ctor_ILexer_.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.%23ctor(ILexer)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L25">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase__ctor_" data-uid="Yoakke.Parser.ParserBase.#ctor*"></a>
+  <h4 id="Yoakke_Parser_ParserBase__ctor_ILexer_" data-uid="Yoakke.Parser.ParserBase.#ctor(ILexer)">ParserBase(ILexer)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Parser.ParserBase.html">ParserBase</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ParserBase(ILexer lexer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILexer</span></td>
+        <td><span class="parametername">lexer</span></td>
+        <td><p>The underlying lexer to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_Error_System_Object_System_Nullable_IToken__System_String_.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.Error(System.Object%2CSystem.Nullable%7BIToken%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L155">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_Error_" data-uid="Yoakke.Parser.ParserBase.Error*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_Error_System_Object_System_Nullable_IToken__System_String_" data-uid="Yoakke.Parser.ParserBase.Error(System.Object,System.Nullable{IToken},System.String)">Error(Object, Nullable&lt;IToken&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Utility for constructing a <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static ParseError Error(object expected, IToken? got, string context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The expected element.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IToken</span>&gt;</td>
+        <td><span class="parametername">got</span></td>
+        <td><p>The token encountered instead.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The rule context the error occurred in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a></td>
+        <td><p>The created <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_MergeAlternatives__1_Yoakke_Parser_ParseResult___0__Yoakke_Parser_ParseResult___0__.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.MergeAlternatives%60%601(Yoakke.Parser.ParseResult%7B%60%600%7D%2CYoakke.Parser.ParseResult%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L165">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_MergeAlternatives_" data-uid="Yoakke.Parser.ParserBase.MergeAlternatives*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_MergeAlternatives__1_Yoakke_Parser_ParseResult___0__Yoakke_Parser_ParseResult___0__" data-uid="Yoakke.Parser.ParserBase.MergeAlternatives``1(Yoakke.Parser.ParseResult{``0},Yoakke.Parser.ParseResult{``0})">MergeAlternatives&lt;T&gt;(ParseResult&lt;T&gt;, ParseResult&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Merges alternative <a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult&lt;T&gt;</a>s that happened from the same starting position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static ParseResult&lt;T&gt; MergeAlternatives&lt;T&gt;(ParseResult&lt;T&gt; first, ParseResult&lt;T&gt; second)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult</a>&lt;T&gt;</td>
+        <td><span class="parametername">first</span></td>
+        <td><p>The first alternative result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult</a>&lt;T&gt;</td>
+        <td><span class="parametername">second</span></td>
+        <td><p>The second alternative result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult</a>&lt;T&gt;</td>
+        <td><p>The chosen/constructed <a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult&lt;T&gt;</a> constructed from the alternatives.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The element type of the parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_MergeError__1_Yoakke_Parser_ParseOk___0__Yoakke_Parser_ParseError_.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.MergeError%60%601(Yoakke.Parser.ParseOk%7B%60%600%7D%2CYoakke.Parser.ParseError)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L197">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_MergeError_" data-uid="Yoakke.Parser.ParserBase.MergeError*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_MergeError__1_Yoakke_Parser_ParseOk___0__Yoakke_Parser_ParseError_" data-uid="Yoakke.Parser.ParserBase.MergeError``1(Yoakke.Parser.ParseOk{``0},Yoakke.Parser.ParseError)">MergeError&lt;T&gt;(ParseOk&lt;T&gt;, ParseError)</h4>
+  <div class="markdown level1 summary"><p>Merges a <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a> with a <a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static ParseResult&lt;T&gt; MergeError&lt;T&gt;(ParseOk&lt;T&gt; ok, ParseError error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk</a>&lt;T&gt;</td>
+        <td><span class="parametername">ok</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk&lt;T&gt;</a> to merge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a> to merge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult</a>&lt;T&gt;</td>
+        <td><p>A new <a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult&lt;T&gt;</a> that has the <a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk&lt;T&gt;</a>
+and the <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a> merged.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The element type of the parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_MergeError__1_Yoakke_Parser_ParseResult___0__Yoakke_Parser_ParseError_.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.MergeError%60%601(Yoakke.Parser.ParseResult%7B%60%600%7D%2CYoakke.Parser.ParseError)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L186">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_MergeError_" data-uid="Yoakke.Parser.ParserBase.MergeError*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_MergeError__1_Yoakke_Parser_ParseResult___0__Yoakke_Parser_ParseError_" data-uid="Yoakke.Parser.ParserBase.MergeError``1(Yoakke.Parser.ParseResult{``0},Yoakke.Parser.ParseError)">MergeError&lt;T&gt;(ParseResult&lt;T&gt;, ParseError)</h4>
+  <div class="markdown level1 summary"><p>Merges a <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a> into a <a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static ParseResult&lt;T&gt; MergeError&lt;T&gt;(ParseResult&lt;T&gt; result, ParseError error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult</a>&lt;T&gt;</td>
+        <td><span class="parametername">result</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult&lt;T&gt;</a> to merge into.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a></td>
+        <td><span class="parametername">error</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a> to merge.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult</a>&lt;T&gt;</td>
+        <td><p>A new <a class="xref" href="Yoakke.Parser.ParseResult-1.html">ParseResult&lt;T&gt;</a> that has the <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a> merged in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The element type of the parse.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_Ok__1___0_System_Int32_Yoakke_Parser_ParseError_.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.Ok%60%601(%60%600%2CSystem.Int32%2CYoakke.Parser.ParseError)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L145">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_Ok_" data-uid="Yoakke.Parser.ParserBase.Ok*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_Ok__1___0_System_Int32_Yoakke_Parser_ParseError_" data-uid="Yoakke.Parser.ParserBase.Ok``1(``0,System.Int32,Yoakke.Parser.ParseError)">Ok&lt;T&gt;(T, Int32, ParseError)</h4>
+  <div class="markdown level1 summary"><p>Utility for constructing a <a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static ParseOk&lt;T&gt; Ok&lt;T&gt;(T value, int offset, ParseError furthestError = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The parsed value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The offset in the number of tokens.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a></td>
+        <td><span class="parametername">furthestError</span></td>
+        <td><p>The furthest advanced <a class="xref" href="Yoakke.Parser.ParseError.html">ParseError</a>, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk</a>&lt;T&gt;</td>
+        <td><p>The created <a class="xref" href="Yoakke.Parser.ParseOk-1.html">ParseOk&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The parsed value type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_TryConsume_System_Int32_.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.TryConsume(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L130">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_TryConsume_" data-uid="Yoakke.Parser.ParserBase.TryConsume*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_TryConsume_System_Int32_" data-uid="Yoakke.Parser.ParserBase.TryConsume(System.Int32)">TryConsume(Int32)</h4>
+  <div class="markdown level1 summary"><p>Consumes multiple tokens from the input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryConsume(int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The amount of tokens to consume.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the tokens were successfully consumed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_TryConsume_System_Nullable_IToken___.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.TryConsume(System.Nullable%7BIToken%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L118">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_TryConsume_" data-uid="Yoakke.Parser.ParserBase.TryConsume*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_TryConsume_System_Nullable_IToken___" data-uid="Yoakke.Parser.ParserBase.TryConsume(System.Nullable{IToken}@)">TryConsume(out Nullable&lt;IToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Consumes the next token in the input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryConsume(out IToken? token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IToken</span>&gt;</td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The consumed token if succeeded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the token was successfully consumed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_TryMatchKind__1_System_Int32___0_System_Nullable_IToken___0____.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.TryMatchKind%60%601(System.Int32%2C%60%600%2CSystem.Nullable%7BIToken%7B%60%600%7D%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L50">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_TryMatchKind_" data-uid="Yoakke.Parser.ParserBase.TryMatchKind*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_TryMatchKind__1_System_Int32___0_System_Nullable_IToken___0____" data-uid="Yoakke.Parser.ParserBase.TryMatchKind``1(System.Int32,``0,System.Nullable{IToken{``0}}@)">TryMatchKind&lt;T&gt;(Int32, T, out Nullable&lt;IToken&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if a certain token ahead has a certain kind.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryMatchKind&lt;T&gt;(int offset, T kind, out IToken&lt;T&gt;? token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The amount to look ahead.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">kind</span></td>
+        <td><p>The token kind to check for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IToken</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token, if it matched the kind.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the given token ahead has the certain kind.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The token kind type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_TryMatchText_System_Int32_System_String_System_Nullable_IToken___.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.TryMatchText(System.Int32%2CSystem.String%2CSystem.Nullable%7BIToken%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L69">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_TryMatchText_" data-uid="Yoakke.Parser.ParserBase.TryMatchText*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_TryMatchText_System_Int32_System_String_System_Nullable_IToken___" data-uid="Yoakke.Parser.ParserBase.TryMatchText(System.Int32,System.String,System.Nullable{IToken}@)">TryMatchText(Int32, String, out Nullable&lt;IToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if a certain token ahead has a certain text value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryMatchText(int offset, string text, out IToken? token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The amount to look ahead.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The token text to check for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IToken</span>&gt;</td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token, if it matched the kind.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the given token ahead has the certain text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase_TryPeek_System_Int32_System_Nullable_IToken___.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase.TryPeek(System.Int32%2CSystem.Nullable%7BIToken%7D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L78">View Source</a>
+  </span>
+  <a id="Yoakke_Parser_ParserBase_TryPeek_" data-uid="Yoakke.Parser.ParserBase.TryPeek*"></a>
+  <h4 id="Yoakke_Parser_ParserBase_TryPeek_System_Int32_System_Nullable_IToken___" data-uid="Yoakke.Parser.ParserBase.TryPeek(System.Int32,System.Nullable{IToken}@)">TryPeek(Int32, out Nullable&lt;IToken&gt;)</h4>
+  <div class="markdown level1 summary"><p>Peeks forward in the input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool TryPeek(int offset, out IToken? token)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The amount to peek forward.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IToken</span>&gt;</td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token the given offset ahead, if there were enough tokens.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if there were enough tokens to peek ahead the amount.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Parser_ParserBase.md&amp;value=---%0Auid%3A%20Yoakke.Parser.ParserBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Parser/ParserBase.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

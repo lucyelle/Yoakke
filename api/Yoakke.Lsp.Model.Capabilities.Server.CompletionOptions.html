@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CompletionOptions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CompletionOptions
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions">
+  
+  
+  <h1 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions" class="text-break">Class CompletionOptions
+  </h1>
+  <div class="markdown level0 summary"><p>Completion options.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CompletionOptions</span></div>
+      <div class="level2"><a class="xref" href="Yoakke.Lsp.Model.Capabilities.Server.RegistrationOptions.CompletionRegistrationOptions.html">CompletionRegistrationOptions</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yoakke.Lsp.Model.Basic.IWorkDoneProgressOptions.html">IWorkDoneProgressOptions</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Lsp.Model.Capabilities.Server.html">Yoakke.Lsp.Model.Capabilities.Server</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Lsp.Model.dll</h6>
+  <h5 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CompletionOptions : object, IWorkDoneProgressOptions</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_AllCommitCharacters.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.AllCommitCharacters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Capabilities/Server/CompletionOptions.cs/#L59">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_AllCommitCharacters_" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.AllCommitCharacters*"></a>
+  <h4 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_AllCommitCharacters" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.AllCommitCharacters">AllCommitCharacters</h4>
+  <div class="markdown level1 summary"><p>The list of all possible characters that commit a completion. This field
+can be used if clients don't support individual commit characters per
+completion item. See client capability
+<code>completion.completionItem.commitCharactersSupport</code>.</p>
+<p>If a server provides both <code>allCommitCharacters</code> and commit characters on
+an individual completion item the ones on the completion item win.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt;? AllCommitCharacters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_CompletionItem.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.CompletionItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Capabilities/Server/CompletionOptions.cs/#L74">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_CompletionItem_" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.CompletionItem*"></a>
+  <h4 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_CompletionItem" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.CompletionItem">CompletionItem</h4>
+  <div class="markdown level1 summary"><p>The server supports the following <code>CompletionItem</code> specific
+capabilities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompletionOptions.CompletionItemOptions CompletionItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.CompletionItemOptions.html">CompletionOptions.CompletionItemOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_ResolveProvider.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.ResolveProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Capabilities/Server/CompletionOptions.cs/#L67">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_ResolveProvider_" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.ResolveProvider*"></a>
+  <h4 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_ResolveProvider" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.ResolveProvider">ResolveProvider</h4>
+  <div class="markdown level1 summary"><p>The server provides support to resolve additional
+information for a completion item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? ResolveProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_TriggerCharacters.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.TriggerCharacters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Capabilities/Server/CompletionOptions.cs/#L47">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_TriggerCharacters_" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.TriggerCharacters*"></a>
+  <h4 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_TriggerCharacters" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.TriggerCharacters">TriggerCharacters</h4>
+  <div class="markdown level1 summary"><p>Most tools trigger completion request automatically without explicitly
+requesting it using a keyboard shortcut (e.g. Ctrl+Space). Typically they
+do so when the user starts to type an identifier. For example if the user
+types <code>c</code> in a JavaScript file code complete will automatically pop up
+present <code>console</code> besides others as a completion item. Characters that
+make up identifiers don't need to be listed here.</p>
+<p>If code complete should automatically be trigger on characters not being
+valid inside an identifier (for example <code>.</code> in JavaScript) list them in
+<code>triggerCharacters</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt;? TriggerCharacters { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_WorkDoneProgress.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.WorkDoneProgress%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Capabilities/Server/CompletionOptions.cs/#L32">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_WorkDoneProgress_" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.WorkDoneProgress*"></a>
+  <h4 id="Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions_WorkDoneProgress" data-uid="Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions.WorkDoneProgress">WorkDoneProgress</h4>
+  <div class="markdown level1 summary"><p>True, if work done progress reporting is supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? WorkDoneProgress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yoakke.Lsp.Model.Basic.IWorkDoneProgressOptions.html">IWorkDoneProgressOptions</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Capabilities_Server_CompletionOptions.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Capabilities.Server.CompletionOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Capabilities/Server/CompletionOptions.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

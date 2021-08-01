@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Range
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Range
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Text.Range">
+  
+  
+  <h1 id="Yoakke_Text_Range" data-uid="Yoakke.Text.Range" class="text-break">Struct Range
+  </h1>
+  <div class="markdown level0 summary"><p>An 2D interval of text positions with an inclusive starting position and an exclusive ending position.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IEquatable</span>&lt;<a class="xref" href="Yoakke.Text.Range.html">Range</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Text.html">Yoakke.Text</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Text.dll</h6>
+  <h5 id="Yoakke_Text_Range_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Range : IEquatable&lt;Range&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range__ctor_Yoakke_Text_Position_System_Int32_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.%23ctor(Yoakke.Text.Position%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L42">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range__ctor_" data-uid="Yoakke.Text.Range.#ctor*"></a>
+  <h4 id="Yoakke_Text_Range__ctor_Yoakke_Text_Position_System_Int32_" data-uid="Yoakke.Text.Range.#ctor(Yoakke.Text.Position,System.Int32)">Range(Position, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Text.Range.html">Range</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range(Position start, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> that's inside this range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of this range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range__ctor_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.%23ctor(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L29">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range__ctor_" data-uid="Yoakke.Text.Range.#ctor*"></a>
+  <h4 id="Yoakke_Text_Range__ctor_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Range.#ctor(Yoakke.Text.Position,Yoakke.Text.Position)">Range(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Text.Range.html">Range</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range(Position start, Position end)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> that's inside this range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> after this range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range__ctor_Yoakke_Text_Range_Yoakke_Text_Range_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.%23ctor(Yoakke.Text.Range%2CYoakke.Text.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L52">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range__ctor_" data-uid="Yoakke.Text.Range.#ctor*"></a>
+  <h4 id="Yoakke_Text_Range__ctor_Yoakke_Text_Range_Yoakke_Text_Range_" data-uid="Yoakke.Text.Range.#ctor(Yoakke.Text.Range,Yoakke.Text.Range)">Range(Range, Range)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Text.Range.html">Range</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range(Range from, Range to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The starting range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The ending range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_End.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.End%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Yoakke_Text_Range_End" data-uid="Yoakke.Text.Range.End">End</h4>
+  <div class="markdown level1 summary"><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> after this <a class="xref" href="Yoakke.Text.Range.html">Range</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Position End</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_Start.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Yoakke_Text_Range_Start" data-uid="Yoakke.Text.Range.Start">Start</h4>
+  <div class="markdown level1 summary"><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> that's inside this <a class="xref" href="Yoakke.Text.Range.html">Range</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Position Start</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_Contains_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.Contains(Yoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L74">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_Contains_" data-uid="Yoakke.Text.Range.Contains*"></a>
+  <h4 id="Yoakke_Text_Range_Contains_Yoakke_Text_Position_" data-uid="Yoakke.Text.Range.Contains(Yoakke.Text.Position)">Contains(Position)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given <a class="xref" href="Yoakke.Text.Position.html">Position</a> is within the bounds of this <a class="xref" href="Yoakke.Text.Range.html">Range</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Position position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The <a class="xref" href="Yoakke.Text.Position.html">Position</a> to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the <a class="xref" href="Yoakke.Text.Position.html">Position</a> is contained in this <a class="xref" href="Yoakke.Text.Range.html">Range</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_Equals_System_Nullable_System_Object__.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.Equals(System.Nullable%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L58">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_Equals_" data-uid="Yoakke.Text.Range.Equals*"></a>
+  <h4 id="Yoakke_Text_Range_Equals_System_Nullable_System_Object__" data-uid="Yoakke.Text.Range.Equals(System.Nullable{System.Object})">Equals(Nullable&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_Equals_Yoakke_Text_Range_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.Equals(Yoakke.Text.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L61">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_Equals_" data-uid="Yoakke.Text.Range.Equals*"></a>
+  <h4 id="Yoakke_Text_Range_Equals_Yoakke_Text_Range_" data-uid="Yoakke.Text.Range.Equals(Yoakke.Text.Range)">Equals(Range)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Range other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_GetHashCode.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L64">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_GetHashCode_" data-uid="Yoakke.Text.Range.GetHashCode*"></a>
+  <h4 id="Yoakke_Text_Range_GetHashCode" data-uid="Yoakke.Text.Range.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_Intersects_Yoakke_Text_Range_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.Intersects(Yoakke.Text.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L81">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_Intersects_" data-uid="Yoakke.Text.Range.Intersects*"></a>
+  <h4 id="Yoakke_Text_Range_Intersects_Yoakke_Text_Range_" data-uid="Yoakke.Text.Range.Intersects(Yoakke.Text.Range)">Intersects(Range)</h4>
+  <div class="markdown level1 summary"><p>Checks if this <a class="xref" href="Yoakke.Text.Range.html">Range</a> intersects with another one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Intersects(Range other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The other <a class="xref" href="Yoakke.Text.Range.html">Range</a> to check intersection with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the two <a class="xref" href="Yoakke.Text.Range.html">Range</a>s intersect.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_ToString.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L67">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_ToString_" data-uid="Yoakke.Text.Range.ToString*"></a>
+  <h4 id="Yoakke_Text_Range_ToString" data-uid="Yoakke.Text.Range.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_op_Equality_Yoakke_Text_Range_Yoakke_Text_Range_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.op_Equality(Yoakke.Text.Range%2CYoakke.Text.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L89">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_op_Equality_" data-uid="Yoakke.Text.Range.op_Equality*"></a>
+  <h4 id="Yoakke_Text_Range_op_Equality_Yoakke_Text_Range_Yoakke_Text_Range_" data-uid="Yoakke.Text.Range.op_Equality(Yoakke.Text.Range,Yoakke.Text.Range)">Equality(Range, Range)</h4>
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Yoakke.Text.Range.html">Range</a>s for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Range r1, Range r2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">r1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Range.html">Range</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">r2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Range.html">Range</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">r1</code> and <code data-dev-comment-type="paramref" class="paramref">r2</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range_op_Inequality_Yoakke_Text_Range_Yoakke_Text_Range_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range.op_Inequality(Yoakke.Text.Range%2CYoakke.Text.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L97">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Range_op_Inequality_" data-uid="Yoakke.Text.Range.op_Inequality*"></a>
+  <h4 id="Yoakke_Text_Range_op_Inequality_Yoakke_Text_Range_Yoakke_Text_Range_" data-uid="Yoakke.Text.Range.op_Inequality(Yoakke.Text.Range,Yoakke.Text.Range)">Inequality(Range, Range)</h4>
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Yoakke.Text.Range.html">Range</a>s for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Range r1, Range r2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">r1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Range.html">Range</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Range.html">Range</a></td>
+        <td><span class="parametername">r2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Range.html">Range</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">r1</code> and <code data-dev-comment-type="paramref" class="paramref">r2</code> are not equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IEquatable&lt;&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Range.md&amp;value=---%0Auid%3A%20Yoakke.Text.Range%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Range.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

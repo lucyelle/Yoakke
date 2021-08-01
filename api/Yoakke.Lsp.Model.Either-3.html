@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Either&lt;T1, T2, T3&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Either&lt;T1, T2, T3&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Lsp.Model.Either`3">
+  
+  
+  <h1 id="Yoakke_Lsp_Model_Either_3" data-uid="Yoakke.Lsp.Model.Either`3" class="text-break">Class Either&lt;T1, T2, T3&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A sum-type of three possibilities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Either&lt;T1, T2, T3&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yoakke.Lsp.Model.IEither.html">IEither</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Lsp.Model.html">Yoakke.Lsp.Model</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Lsp.Model.dll</h6>
+  <h5 id="Yoakke_Lsp_Model_Either_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Either&lt;T1, T2, T3&gt; : object, IEither</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td><p>The type of the first alternative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td><p>The type of the second alternative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td><p>The type of the third alternative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3__ctor__0_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L149">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3__ctor_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3__ctor__0_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor(`0)">Either(T1)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Either(T1 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3__ctor__1_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.%23ctor(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L158">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3__ctor_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3__ctor__1_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor(`1)">Either(T2)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Either(T2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3__ctor__2_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.%23ctor(%602)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L167">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3__ctor_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3__ctor__2_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor(`2)">Either(T3)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Either(T3 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3__ctor_System_Object_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.%23ctor(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L140">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3__ctor_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3__ctor_System_Object_" data-uid="Yoakke.Lsp.Model.Either`3.#ctor(System.Object)">Either(Object)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Either(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The stored value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_AsFirst.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.AsFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L124">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_AsFirst_" data-uid="Yoakke.Lsp.Model.Either`3.AsFirst*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_AsFirst" data-uid="Yoakke.Lsp.Model.Either`3.AsFirst">AsFirst</h4>
+  <div class="markdown level1 summary"><p>Retrieves <a class="xref" href="Yoakke.Lsp.Model.Either-3.html#Yoakke_Lsp_Model_Either_3_Value">Value</a> as <code data-dev-comment-type="typeparamref" class="typeparamref">T1</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T1 AsFirst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_AsSecond.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.AsSecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L129">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_AsSecond_" data-uid="Yoakke.Lsp.Model.Either`3.AsSecond*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_AsSecond" data-uid="Yoakke.Lsp.Model.Either`3.AsSecond">AsSecond</h4>
+  <div class="markdown level1 summary"><p>Retrieves <a class="xref" href="Yoakke.Lsp.Model.Either-3.html#Yoakke_Lsp_Model_Either_3_Value">Value</a> as <code data-dev-comment-type="typeparamref" class="typeparamref">T2</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T2 AsSecond { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_AsThird.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.AsThird%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L134">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_AsThird_" data-uid="Yoakke.Lsp.Model.Either`3.AsThird*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_AsThird" data-uid="Yoakke.Lsp.Model.Either`3.AsThird">AsThird</h4>
+  <div class="markdown level1 summary"><p>Retrieves <a class="xref" href="Yoakke.Lsp.Model.Either-3.html#Yoakke_Lsp_Model_Either_3_Value">Value</a> as <code data-dev-comment-type="typeparamref" class="typeparamref">T3</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T3 AsThird { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_IsFirst.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.IsFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L109">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_IsFirst_" data-uid="Yoakke.Lsp.Model.Either`3.IsFirst*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_IsFirst" data-uid="Yoakke.Lsp.Model.Either`3.IsFirst">IsFirst</h4>
+  <div class="markdown level1 summary"><p>True, if <a class="xref" href="Yoakke.Lsp.Model.Either-3.html#Yoakke_Lsp_Model_Either_3_Value">Value</a> is <code data-dev-comment-type="typeparamref" class="typeparamref">T1</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFirst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_IsSecond.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.IsSecond%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L114">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_IsSecond_" data-uid="Yoakke.Lsp.Model.Either`3.IsSecond*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_IsSecond" data-uid="Yoakke.Lsp.Model.Either`3.IsSecond">IsSecond</h4>
+  <div class="markdown level1 summary"><p>True, if <a class="xref" href="Yoakke.Lsp.Model.Either-3.html#Yoakke_Lsp_Model_Either_3_Value">Value</a> is <code data-dev-comment-type="typeparamref" class="typeparamref">T2</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSecond { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_IsThird.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.IsThird%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L119">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_IsThird_" data-uid="Yoakke.Lsp.Model.Either`3.IsThird*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_IsThird" data-uid="Yoakke.Lsp.Model.Either`3.IsThird">IsThird</h4>
+  <div class="markdown level1 summary"><p>True, if <a class="xref" href="Yoakke.Lsp.Model.Either-3.html#Yoakke_Lsp_Model_Either_3_Value">Value</a> is <code data-dev-comment-type="typeparamref" class="typeparamref">T3</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsThird { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_Value.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L104">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_Value_" data-uid="Yoakke.Lsp.Model.Either`3.Value*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_Value" data-uid="Yoakke.Lsp.Model.Either`3.Value">Value</h4>
+  <div class="markdown level1 summary"><p>The currently held value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_op_Implicit__0__Yoakke_Lsp_Model_Either__0__1__2_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.op_Implicit(%600)~Yoakke.Lsp.Model.Either%7B%600%2C%601%2C%602%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L176">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_op_Implicit_" data-uid="Yoakke.Lsp.Model.Either`3.op_Implicit*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_op_Implicit__0__Yoakke_Lsp_Model_Either__0__1__2_" data-uid="Yoakke.Lsp.Model.Either`3.op_Implicit(`0)~Yoakke.Lsp.Model.Either{`0,`1,`2}">Implicit(T1 to Either&lt;T1, T2, T3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implicitly casts a <code data-dev-comment-type="typeparamref" class="typeparamref">T1</code> value to an <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Either&lt;T1, T2, T3&gt;(T1 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either</a>&lt;T1, T2, T3&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_op_Implicit__1__Yoakke_Lsp_Model_Either__0__1__2_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.op_Implicit(%601)~Yoakke.Lsp.Model.Either%7B%600%2C%601%2C%602%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L182">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_op_Implicit_" data-uid="Yoakke.Lsp.Model.Either`3.op_Implicit*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_op_Implicit__1__Yoakke_Lsp_Model_Either__0__1__2_" data-uid="Yoakke.Lsp.Model.Either`3.op_Implicit(`1)~Yoakke.Lsp.Model.Either{`0,`1,`2}">Implicit(T2 to Either&lt;T1, T2, T3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implicitly casts a <code data-dev-comment-type="typeparamref" class="typeparamref">T2</code> value to an <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Either&lt;T1, T2, T3&gt;(T2 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either</a>&lt;T1, T2, T3&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3_op_Implicit__2__Yoakke_Lsp_Model_Either__0__1__2_.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603.op_Implicit(%602)~Yoakke.Lsp.Model.Either%7B%600%2C%601%2C%602%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L188">View Source</a>
+  </span>
+  <a id="Yoakke_Lsp_Model_Either_3_op_Implicit_" data-uid="Yoakke.Lsp.Model.Either`3.op_Implicit*"></a>
+  <h4 id="Yoakke_Lsp_Model_Either_3_op_Implicit__2__Yoakke_Lsp_Model_Either__0__1__2_" data-uid="Yoakke.Lsp.Model.Either`3.op_Implicit(`2)~Yoakke.Lsp.Model.Either{`0,`1,`2}">Implicit(T3 to Either&lt;T1, T2, T3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Implicitly casts a <code data-dev-comment-type="typeparamref" class="typeparamref">T3</code> value to an <a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either&lt;T1, T2, T3&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Either&lt;T1, T2, T3&gt;(T3 value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Lsp.Model.Either-3.html">Either</a>&lt;T1, T2, T3&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yoakke.Lsp.Model.IEither.html">IEither</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Lsp_Model_Either_3.md&amp;value=---%0Auid%3A%20Yoakke.Lsp.Model.Either%603%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Lsp.Model/Either.cs/#L100" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

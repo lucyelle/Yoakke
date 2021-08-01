@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Position
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Position
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Text.Position">
+  
+  
+  <h1 id="Yoakke_Text_Position" data-uid="Yoakke.Text.Position" class="text-break">Struct Position
+  </h1>
+  <div class="markdown level0 summary"><p>Represents 2D position inside some text.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IEquatable</span>&lt;<a class="xref" href="Yoakke.Text.Position.html">Position</a>&gt;</div>
+    <div><span class="xref">IComparable</span>&lt;<a class="xref" href="Yoakke.Text.Position.html">Position</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Text.html">Yoakke.Text</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Text.dll</h6>
+  <h5 id="Yoakke_Text_Position_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Position : IEquatable&lt;Position&gt;, IComparable&lt;Position&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position__ctor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.%23ctor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L29">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position__ctor_" data-uid="Yoakke.Text.Position.#ctor*"></a>
+  <h4 id="Yoakke_Text_Position__ctor_System_Int32_System_Int32_" data-uid="Yoakke.Text.Position.#ctor(System.Int32,System.Int32)">Position(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Text.Position.html">Position</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position(int line, int column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>The 0-based line index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">column</span></td>
+        <td><p>The 0-based column index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_Column.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.Column%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L22">View Source</a>
+  </span>
+  <h4 id="Yoakke_Text_Position_Column" data-uid="Yoakke.Text.Position.Column">Column</h4>
+  <div class="markdown level1 summary"><p>The 0-based column index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Column</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_Line.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.Line%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Yoakke_Text_Position_Line" data-uid="Yoakke.Text.Position.Line">Line</h4>
+  <div class="markdown level1 summary"><p>The 0-based line index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Line</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_Advance_System_Int32_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.Advance(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L109">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_Advance_" data-uid="Yoakke.Text.Position.Advance*"></a>
+  <h4 id="Yoakke_Text_Position_Advance_System_Int32_" data-uid="Yoakke.Text.Position.Advance(System.Int32)">Advance(Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Yoakke.Text.Position.html">Position</a> that's advanced in the current line by the given amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position Advance(int amount = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to advance in the current line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><p>The <a class="xref" href="Yoakke.Text.Position.html">Position</a> in the same line, advanced by columns.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_CompareTo_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.CompareTo(Yoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L45">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_CompareTo_" data-uid="Yoakke.Text.Position.CompareTo*"></a>
+  <h4 id="Yoakke_Text_Position_CompareTo_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.CompareTo(Yoakke.Text.Position)">CompareTo(Position)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Position other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_Equals_System_Nullable_System_Object__.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.Equals(System.Nullable%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L36">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_Equals_" data-uid="Yoakke.Text.Position.Equals*"></a>
+  <h4 id="Yoakke_Text_Position_Equals_System_Nullable_System_Object__" data-uid="Yoakke.Text.Position.Equals(System.Nullable{System.Object})">Equals(Nullable&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_Equals_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.Equals(Yoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L39">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_Equals_" data-uid="Yoakke.Text.Position.Equals*"></a>
+  <h4 id="Yoakke_Text_Position_Equals_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.Equals(Yoakke.Text.Position)">Equals(Position)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Position other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_GetHashCode.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L42">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_GetHashCode_" data-uid="Yoakke.Text.Position.GetHashCode*"></a>
+  <h4 id="Yoakke_Text_Position_GetHashCode" data-uid="Yoakke.Text.Position.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_Newline.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.Newline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L115">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_Newline_" data-uid="Yoakke.Text.Position.Newline*"></a>
+  <h4 id="Yoakke_Text_Position_Newline" data-uid="Yoakke.Text.Position.Newline">Newline()</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Yoakke.Text.Position.html">Position</a> that points to the first character of the next line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position Newline()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><p>A <a class="xref" href="Yoakke.Text.Position.html">Position</a> in the next line's first character.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_ToString.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L102">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_ToString_" data-uid="Yoakke.Text.Position.ToString*"></a>
+  <h4 id="Yoakke_Text_Position_ToString" data-uid="Yoakke.Text.Position.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_op_Equality_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.op_Equality(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L57">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_op_Equality_" data-uid="Yoakke.Text.Position.op_Equality*"></a>
+  <h4 id="Yoakke_Text_Position_op_Equality_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.op_Equality(Yoakke.Text.Position,Yoakke.Text.Position)">Equality(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Yoakke.Text.Position.html">Position</a>s for equality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Position p1, Position p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">p1</code> and <code data-dev-comment-type="paramref" class="paramref">p2</code> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_op_GreaterThan_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.op_GreaterThan(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L81">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_op_GreaterThan_" data-uid="Yoakke.Text.Position.op_GreaterThan*"></a>
+  <h4 id="Yoakke_Text_Position_op_GreaterThan_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.op_GreaterThan(Yoakke.Text.Position,Yoakke.Text.Position)">GreaterThan(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Greater-than compares two <a class="xref" href="Yoakke.Text.Position.html">Position</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(Position p1, Position p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">p1</code> comes after <code data-dev-comment-type="paramref" class="paramref">p2</code> in a text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_op_GreaterThanOrEqual_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.op_GreaterThanOrEqual(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L99">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_op_GreaterThanOrEqual_" data-uid="Yoakke.Text.Position.op_GreaterThanOrEqual*"></a>
+  <h4 id="Yoakke_Text_Position_op_GreaterThanOrEqual_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.op_GreaterThanOrEqual(Yoakke.Text.Position,Yoakke.Text.Position)">GreaterThanOrEqual(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Greater-than or equals compares two <a class="xref" href="Yoakke.Text.Position.html">Position</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Position p1, Position p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">p1</code> comes after <code data-dev-comment-type="paramref" class="paramref">p2</code> in a text, or they happen
+to be the exact same <a class="xref" href="Yoakke.Text.Position.html">Position</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_op_Inequality_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.op_Inequality(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L65">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_op_Inequality_" data-uid="Yoakke.Text.Position.op_Inequality*"></a>
+  <h4 id="Yoakke_Text_Position_op_Inequality_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.op_Inequality(Yoakke.Text.Position,Yoakke.Text.Position)">Inequality(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Compares two <a class="xref" href="Yoakke.Text.Position.html">Position</a>s for inequality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Position p1, Position p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">p1</code> and <code data-dev-comment-type="paramref" class="paramref">p2</code> are not equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_op_LessThan_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.op_LessThan(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L73">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_op_LessThan_" data-uid="Yoakke.Text.Position.op_LessThan*"></a>
+  <h4 id="Yoakke_Text_Position_op_LessThan_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.op_LessThan(Yoakke.Text.Position,Yoakke.Text.Position)">LessThan(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Less-than compares two <a class="xref" href="Yoakke.Text.Position.html">Position</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Position p1, Position p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">p1</code> comes before <code data-dev-comment-type="paramref" class="paramref">p2</code> in a text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position_op_LessThanOrEqual_Yoakke_Text_Position_Yoakke_Text_Position_.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position.op_LessThanOrEqual(Yoakke.Text.Position%2CYoakke.Text.Position)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L90">View Source</a>
+  </span>
+  <a id="Yoakke_Text_Position_op_LessThanOrEqual_" data-uid="Yoakke.Text.Position.op_LessThanOrEqual*"></a>
+  <h4 id="Yoakke_Text_Position_op_LessThanOrEqual_Yoakke_Text_Position_Yoakke_Text_Position_" data-uid="Yoakke.Text.Position.op_LessThanOrEqual(Yoakke.Text.Position,Yoakke.Text.Position)">LessThanOrEqual(Position, Position)</h4>
+  <div class="markdown level1 summary"><p>Less-than or equals compares two <a class="xref" href="Yoakke.Text.Position.html">Position</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Position p1, Position p2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p1</span></td>
+        <td><p>The first <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Text.Position.html">Position</a></td>
+        <td><span class="parametername">p2</span></td>
+        <td><p>The second <a class="xref" href="Yoakke.Text.Position.html">Position</a> to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if <code data-dev-comment-type="paramref" class="paramref">p1</code> comes before <code data-dev-comment-type="paramref" class="paramref">p2</code> in a text, or they happen
+to be the exact same <a class="xref" href="Yoakke.Text.Position.html">Position</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">IEquatable&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">IComparable&lt;&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Text_Position.md&amp;value=---%0Auid%3A%20Yoakke.Text.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Text/Position.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

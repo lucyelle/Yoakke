@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scope&lt;TTag&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scope&lt;TTag&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Symbols.Scope`1">
+  
+  
+  <h1 id="Yoakke_Symbols_Scope_1" data-uid="Yoakke.Symbols.Scope`1" class="text-break">Class Scope&lt;TTag&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A simple scope implementation with a tag type.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Scope&lt;TTag&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yoakke.Symbols.IScope.html">IScope</a></div>
+    <div><a class="xref" href="Yoakke.Symbols.IReadOnlyScope.html">IReadOnlyScope</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Symbols.html">Yoakke.Symbols</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Symbols.dll</h6>
+  <h5 id="Yoakke_Symbols_Scope_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Scope&lt;TTag&gt; : object, IScope, IReadOnlyScope where TTag : struct</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTag</span></td>
+        <td><p>The tag type associated with the scope.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1__ctor__0_.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.%23ctor(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L49">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1__ctor_" data-uid="Yoakke.Symbols.Scope`1.#ctor*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1__ctor__0_" data-uid="Yoakke.Symbols.Scope`1.#ctor(`0)">Scope(TTag)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Symbols.Scope-1.html">Scope&lt;TTag&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scope(TTag tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TTag</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The tag of this scope.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1__ctor_Yoakke_Symbols_IReadOnlyScope__0_.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.%23ctor(Yoakke.Symbols.IReadOnlyScope%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L39">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1__ctor_" data-uid="Yoakke.Symbols.Scope`1.#ctor*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1__ctor_Yoakke_Symbols_IReadOnlyScope__0_" data-uid="Yoakke.Symbols.Scope`1.#ctor(Yoakke.Symbols.IReadOnlyScope,`0)">Scope(IReadOnlyScope, TTag)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Symbols.Scope-1.html">Scope&lt;TTag&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scope(IReadOnlyScope parent = null, TTag tag = default(TTag))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Symbols.IReadOnlyScope.html">IReadOnlyScope</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent (containing) scope of this one.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TTag</span></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The tag of this scope.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_ContainingScope.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.ContainingScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L24">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_ContainingScope_" data-uid="Yoakke.Symbols.Scope`1.ContainingScope*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_ContainingScope" data-uid="Yoakke.Symbols.Scope`1.ContainingScope">ContainingScope</h4>
+  <div class="markdown level1 summary"><p>The containing scope of this one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyScope ContainingScope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Symbols.IReadOnlyScope.html">IReadOnlyScope</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_IsGlobal.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.IsGlobal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L27">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_IsGlobal_" data-uid="Yoakke.Symbols.Scope`1.IsGlobal*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_IsGlobal" data-uid="Yoakke.Symbols.Scope`1.IsGlobal">IsGlobal</h4>
+  <div class="markdown level1 summary"><p>True, if this is the global scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGlobal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_Symbols.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.Symbols%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L30">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_Symbols_" data-uid="Yoakke.Symbols.Scope`1.Symbols*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_Symbols" data-uid="Yoakke.Symbols.Scope`1.Symbols">Symbols</h4>
+  <div class="markdown level1 summary"><p>The symbols defined in this scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, ISymbol&gt; Symbols { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Yoakke.Symbols.ISymbol.html">ISymbol</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_Tag.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L21">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_Tag_" data-uid="Yoakke.Symbols.Scope`1.Tag*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_Tag" data-uid="Yoakke.Symbols.Scope`1.Tag">Tag</h4>
+  <div class="markdown level1 summary"><p>The tag associated with the scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TTag Tag { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_DefineSymbol_Yoakke_Symbols_ISymbol_.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.DefineSymbol(Yoakke.Symbols.ISymbol)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L71">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_DefineSymbol_" data-uid="Yoakke.Symbols.Scope`1.DefineSymbol*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_DefineSymbol_Yoakke_Symbols_ISymbol_" data-uid="Yoakke.Symbols.Scope`1.DefineSymbol(Yoakke.Symbols.ISymbol)">DefineSymbol(ISymbol)</h4>
+  <div class="markdown level1 summary"><p>Defines a symbol in this scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DefineSymbol(ISymbol symbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Symbols.ISymbol.html">ISymbol</a></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The symbol to define.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_GetReachableSymbols.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.GetReachableSymbols%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L55">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_GetReachableSymbols_" data-uid="Yoakke.Symbols.Scope`1.GetReachableSymbols*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_GetReachableSymbols" data-uid="Yoakke.Symbols.Scope`1.GetReachableSymbols">GetReachableSymbols()</h4>
+  <div class="markdown level1 summary"><p>Enumerates over all accessible symbols from this scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ISymbol&gt; GetReachableSymbols()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Yoakke.Symbols.ISymbol.html">ISymbol</a>&gt;</td>
+        <td><p>An enumerator that enumerates all symbols from this scope.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_ReferenceSymbol_System_String_.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.ReferenceSymbol(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L60">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_ReferenceSymbol_" data-uid="Yoakke.Symbols.Scope`1.ReferenceSymbol*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_ReferenceSymbol_System_String_" data-uid="Yoakke.Symbols.Scope`1.ReferenceSymbol(System.String)">ReferenceSymbol(String)</h4>
+  <div class="markdown level1 summary"><p>Tries to reference a symbol in this or any parent scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISymbol ReferenceSymbol(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the symbol to reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Symbols.ISymbol.html">ISymbol</a></td>
+        <td><p>The symbol, if found, null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1_ReferenceSymbol_System_String_Predicate_Yoakke_Symbols_IReadOnlyScope__.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601.ReferenceSymbol(System.String%2CPredicate%7BYoakke.Symbols.IReadOnlyScope%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L63">View Source</a>
+  </span>
+  <a id="Yoakke_Symbols_Scope_1_ReferenceSymbol_" data-uid="Yoakke.Symbols.Scope`1.ReferenceSymbol*"></a>
+  <h4 id="Yoakke_Symbols_Scope_1_ReferenceSymbol_System_String_Predicate_Yoakke_Symbols_IReadOnlyScope__" data-uid="Yoakke.Symbols.Scope`1.ReferenceSymbol(System.String,Predicate{Yoakke.Symbols.IReadOnlyScope})">ReferenceSymbol(String, Predicate&lt;IReadOnlyScope&gt;)</h4>
+  <div class="markdown level1 summary"><p>Tries to reference a symbol in this or any parent scope.</p>
+<p>The predicate is useful for enforcing function-local scoping for example.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISymbol ReferenceSymbol(string name, Predicate&lt;IReadOnlyScope&gt; canCross)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the symbol to reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Predicate</span>&lt;<a class="xref" href="Yoakke.Symbols.IReadOnlyScope.html">IReadOnlyScope</a>&gt;</td>
+        <td><span class="parametername">canCross</span></td>
+        <td><p>A predicate that decides if the search can cross a given scope boundlary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Symbols.ISymbol.html">ISymbol</a></td>
+        <td><p>The symbol, if found, null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yoakke.Symbols.IScope.html">IScope</a>
+  </div>
+  <div>
+      <a class="xref" href="Yoakke.Symbols.IReadOnlyScope.html">IReadOnlyScope</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Symbols_Scope_1.md&amp;value=---%0Auid%3A%20Yoakke.Symbols.Scope%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Symbols/Scope.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

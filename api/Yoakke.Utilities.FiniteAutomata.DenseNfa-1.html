@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DenseNfa&lt;TSymbol&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DenseNfa&lt;TSymbol&gt;
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1">
+  
+  
+  <h1 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1" class="text-break">Class DenseNfa&lt;TSymbol&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A nondeterministic finite automaton with a dense representation, meaning it stores transitions with intervals.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DenseNfa&lt;TSymbol&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Yoakke.Utilities.FiniteAutomata.INondeterministicFiniteAutomata-1.html">INondeterministicFiniteAutomata</a>&lt;TSymbol&gt;</div>
+    <div><a class="xref" href="Yoakke.Utilities.FiniteAutomata.IFiniteAutomata-1.html">IFiniteAutomata</a>&lt;TSymbol&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Yoakke.Utilities.FiniteAutomata.html">Yoakke.Utilities.FiniteAutomata</a></h6>
+  <h6><strong>Assembly</strong>: Yoakke.Utilities.dll</h6>
+  <h5 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DenseNfa&lt;TSymbol&gt; : object, INondeterministicFiniteAutomata&lt;TSymbol&gt;, IFiniteAutomata&lt;TSymbol&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSymbol</span></td>
+        <td><p>The symbol type the automata steps on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1__ctor.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L61">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1__ctor_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.#ctor*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1__ctor" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.#ctor">DenseNfa()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Utilities.FiniteAutomata.DenseNfa-1.html">DenseNfa&lt;TSymbol&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DenseNfa()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1__ctor_IComparer__0__.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.%23ctor(IComparer%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L70">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1__ctor_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.#ctor*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1__ctor_IComparer__0__" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.#ctor(IComparer{`0})">DenseNfa(IComparer&lt;TSymbol&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Yoakke.Utilities.FiniteAutomata.DenseNfa-1.html">DenseNfa&lt;TSymbol&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DenseNfa(IComparer&lt;TSymbol&gt; comparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IComparer</span>&lt;TSymbol&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td><p>The comparer to use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AcceptingStates.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.AcceptingStates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L43">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AcceptingStates_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AcceptingStates*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AcceptingStates" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AcceptingStates">AcceptingStates</h4>
+  <div class="markdown level1 summary"><p>The set of accepting <a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a>s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISet&lt;State&gt; AcceptingStates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ISet</span>&lt;<a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_InitalState.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.InitalState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L35">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_InitalState_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.InitalState*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_InitalState" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.InitalState">InitalState</h4>
+  <div class="markdown level1 summary"><p>The initial state of the automata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public State InitalState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_States.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.States%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L46">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_States_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.States*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_States" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.States">States</h4>
+  <div class="markdown level1 summary"><p>All states in the automata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;State&gt; States { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_Yoakke_Utilities_FiniteAutomata_State__0_Yoakke_Utilities_FiniteAutomata_State_.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.AddTransition(Yoakke.Utilities.FiniteAutomata.State%2C%600%2CYoakke.Utilities.FiniteAutomata.State)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L218">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AddTransition*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_Yoakke_Utilities_FiniteAutomata_State__0_Yoakke_Utilities_FiniteAutomata_State_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AddTransition(Yoakke.Utilities.FiniteAutomata.State,`0,Yoakke.Utilities.FiniteAutomata.State)">AddTransition(State, TSymbol, State)</h4>
+  <div class="markdown level1 summary"><p>Adds a transition to this nondeterministic finite automaton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTransition(State from, TSymbol on, State to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The state to transition from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSymbol</span></td>
+        <td><span class="parametername">on</span></td>
+        <td><p>The symbol to transition on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The state to transition to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_Yoakke_Utilities_FiniteAutomata_State_Yoakke_Utilities_FiniteAutomata_Epsilon_Yoakke_Utilities_FiniteAutomata_State_.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.AddTransition(Yoakke.Utilities.FiniteAutomata.State%2CYoakke.Utilities.FiniteAutomata.Epsilon%2CYoakke.Utilities.FiniteAutomata.State)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L243">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AddTransition*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_Yoakke_Utilities_FiniteAutomata_State_Yoakke_Utilities_FiniteAutomata_Epsilon_Yoakke_Utilities_FiniteAutomata_State_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AddTransition(Yoakke.Utilities.FiniteAutomata.State,Yoakke.Utilities.FiniteAutomata.Epsilon,Yoakke.Utilities.FiniteAutomata.State)">AddTransition(State, Epsilon, State)</h4>
+  <div class="markdown level1 summary"><p>Adds an epsilon transition to this nondeterministic finite automaton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTransition(State from, Epsilon on, State to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The state to transition from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.Epsilon.html">Epsilon</a></td>
+        <td><span class="parametername">on</span></td>
+        <td><p>The epsilon symbol.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The state to transition to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_Yoakke_Utilities_FiniteAutomata_State_Yoakke_Utilities_Intervals_Interval__0__Yoakke_Utilities_FiniteAutomata_State_.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.AddTransition(Yoakke.Utilities.FiniteAutomata.State%2CYoakke.Utilities.Intervals.Interval%7B%600%7D%2CYoakke.Utilities.FiniteAutomata.State)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L227">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AddTransition*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_AddTransition_Yoakke_Utilities_FiniteAutomata_State_Yoakke_Utilities_Intervals_Interval__0__Yoakke_Utilities_FiniteAutomata_State_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.AddTransition(Yoakke.Utilities.FiniteAutomata.State,Yoakke.Utilities.Intervals.Interval{`0},Yoakke.Utilities.FiniteAutomata.State)">AddTransition(State, Interval&lt;TSymbol&gt;, State)</h4>
+  <div class="markdown level1 summary"><p>Adds a transition to this nondeterministic finite automaton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTransition(State from, Interval&lt;TSymbol&gt; on, State to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The state to transition from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.Intervals.Interval-1.html">Interval</a>&lt;TSymbol&gt;</td>
+        <td><span class="parametername">on</span></td>
+        <td><p>The interval of symbols to transition on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">to</span></td>
+        <td><p>The state to transition to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Determinize.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.Determinize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L123">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Determinize_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.Determinize*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Determinize" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.Determinize">Determinize()</h4>
+  <div class="markdown level1 summary"><p>Determinizes this <a class="xref" href="Yoakke.Utilities.FiniteAutomata.DenseNfa-1.html">DenseNfa&lt;TSymbol&gt;</a> to a <a class="xref" href="Yoakke.Utilities.FiniteAutomata.DenseDfa-1.html">DenseDfa&lt;TSymbol&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DenseDfa&lt;TSymbol&gt; Determinize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.DenseDfa-1.html">DenseDfa</a>&lt;TSymbol&gt;</td>
+        <td><p>The <a class="xref" href="Yoakke.Utilities.FiniteAutomata.DenseDfa-1.html">DenseDfa&lt;TSymbol&gt;</a> equivalent to this.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_EpsilonClosure_Yoakke_Utilities_FiniteAutomata_State_.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.EpsilonClosure(Yoakke.Utilities.FiniteAutomata.State)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L95">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_EpsilonClosure_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.EpsilonClosure*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_EpsilonClosure_Yoakke_Utilities_FiniteAutomata_State_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.EpsilonClosure(Yoakke.Utilities.FiniteAutomata.State)">EpsilonClosure(State)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the epsilon-closure of a given state, which is all the states reachable with only
+epsilon transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;State&gt; EpsilonClosure(State state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state to calculate the epsilon-closure from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a>&gt;</td>
+        <td><p>The states of the epsilon-closure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_GetTransitions_Yoakke_Utilities_FiniteAutomata_State__0_.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.GetTransitions(Yoakke.Utilities.FiniteAutomata.State%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L81">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_GetTransitions_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.GetTransitions*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_GetTransitions_Yoakke_Utilities_FiniteAutomata_State__0_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.GetTransitions(Yoakke.Utilities.FiniteAutomata.State,`0)">GetTransitions(State, TSymbol)</h4>
+  <div class="markdown level1 summary"><p>Gets all the possible transitions from a given state and on a given symbol.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;State&gt; GetTransitions(State from, TSymbol on)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">from</span></td>
+        <td><p>The state to transition from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TSymbol</span></td>
+        <td><span class="parametername">on</span></td>
+        <td><p>The symbol to transition on.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a>&gt;</td>
+        <td><p>The possible resulting states.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_IsAccepting_Yoakke_Utilities_FiniteAutomata_State_.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.IsAccepting(Yoakke.Utilities.FiniteAutomata.State)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L78">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_IsAccepting_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.IsAccepting*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_IsAccepting_Yoakke_Utilities_FiniteAutomata_State_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.IsAccepting(Yoakke.Utilities.FiniteAutomata.State)">IsAccepting(State)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given state is an accepting state in this automata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAccepting(State state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True, if the state is accepting, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_NewState.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.NewState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L210">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_NewState_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.NewState*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_NewState" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.NewState">NewState()</h4>
+  <div class="markdown level1 summary"><p>Creates a new, unique state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public State NewState()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a></td>
+        <td><p>The created state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_ToDebugDOT.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.ToDebugDOT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L177">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_ToDebugDOT_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.ToDebugDOT*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_ToDebugDOT" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.ToDebugDOT">ToDebugDOT()</h4>
+  <div class="markdown level1 summary"><p>Converts this finite automata into a DOT graph that can be visualized for debugging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToDebugDOT()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The DOT description of the automata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Yoakke_Utilities_FiniteAutomata_IFiniteAutomata_TSymbol__AcceptingStates.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.Yoakke%23Utilities%23FiniteAutomata%23IFiniteAutomata%7BTSymbol%7D%23AcceptingStates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L38">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Yoakke_Utilities_FiniteAutomata_IFiniteAutomata_TSymbol__AcceptingStates_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.Yoakke#Utilities#FiniteAutomata#IFiniteAutomata{TSymbol}#AcceptingStates*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Yoakke_Utilities_FiniteAutomata_IFiniteAutomata_TSymbol__AcceptingStates" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.Yoakke#Utilities#FiniteAutomata#IFiniteAutomata{TSymbol}#AcceptingStates">IFiniteAutomata&lt;TSymbol&gt;.AcceptingStates</h4>
+  <div class="markdown level1 summary"><p>The accepting states.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;State&gt; IFiniteAutomata&lt;TSymbol&gt;.AcceptingStates { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Yoakke.Utilities.FiniteAutomata.State.html">State</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Yoakke_Utilities_FiniteAutomata_INondeterministicFiniteAutomata_TSymbol__Determinize.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601.Yoakke%23Utilities%23FiniteAutomata%23INondeterministicFiniteAutomata%7BTSymbol%7D%23Determinize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L117">View Source</a>
+  </span>
+  <a id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Yoakke_Utilities_FiniteAutomata_INondeterministicFiniteAutomata_TSymbol__Determinize_" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.Yoakke#Utilities#FiniteAutomata#INondeterministicFiniteAutomata{TSymbol}#Determinize*"></a>
+  <h4 id="Yoakke_Utilities_FiniteAutomata_DenseNfa_1_Yoakke_Utilities_FiniteAutomata_INondeterministicFiniteAutomata_TSymbol__Determinize" data-uid="Yoakke.Utilities.FiniteAutomata.DenseNfa`1.Yoakke#Utilities#FiniteAutomata#INondeterministicFiniteAutomata{TSymbol}#Determinize">INondeterministicFiniteAutomata&lt;TSymbol&gt;.Determinize()</h4>
+  <div class="markdown level1 summary"><p>Determinizes this nondeterministic finite automaton into a deterministic one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDeterministicFiniteAutomata&lt;TSymbol&gt; INondeterministicFiniteAutomata&lt;TSymbol&gt;.Determinize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Yoakke.Utilities.FiniteAutomata.IDeterministicFiniteAutomata-1.html">IDeterministicFiniteAutomata</a>&lt;TSymbol&gt;</td>
+        <td><p>The constructed DFA.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Yoakke.Utilities.FiniteAutomata.INondeterministicFiniteAutomata-1.html">INondeterministicFiniteAutomata&lt;TSymbol&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Yoakke.Utilities.FiniteAutomata.IFiniteAutomata-1.html">IFiniteAutomata&lt;TSymbol&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/new/master/Documentation/docfx_project/apidoc/new?filename=Yoakke_Utilities_FiniteAutomata_DenseNfa_1.md&amp;value=---%0Auid%3A%20Yoakke.Utilities.FiniteAutomata.DenseNfa%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/LanguageDev/Yoakke/blob/master/Sources/Core/Yoakke.Utilities/FiniteAutomata/DenseNfa.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
